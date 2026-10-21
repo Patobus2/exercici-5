@@ -1,0 +1,24 @@
+name: examen.yml
+on:
+  push:
+    branches: [ test ]
+
+jobs:
+<compile-test-linux>:
+runs-on: linux-latest
+steps:
+  -name: Compila el programa
+   uses: ./conversor c2f 100
+
+  -name: Fa el checkout
+   uses: actions/checkout@v6
+
+
+<compile-test-mac>:
+runs-on: macos-latest
+steps:
+  -name: Compila el programa
+   uses: ./conversor c2f 100
+
+  -name: Fa el checkout
+   uses: actions/checkout@v6
