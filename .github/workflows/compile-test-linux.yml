@@ -1,0 +1,11 @@
+name: Compilar linux
+on:
+  push:
+  branches: [ test ]
+
+jobs:
+<compile-test-linux>:
+runs-on: linux-latest
+steps:
+  -name: Fem checkout
+   uses: actions/checkout@v6

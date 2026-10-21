@@ -1,14 +1,9 @@
-name: exercici-5
+name: compilar mac
 on:
   push:
   branches: [ test ]
 
 jobs:
-<compile-test-linux>:
-runs-on: linux-latest
-steps:
-  -name: Fem checkout
-   uses: actions/checkout@v6
 
 <compile-test-mac>:
 runs-on: mac-latest
