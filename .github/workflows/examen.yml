@@ -8,7 +8,7 @@ jobs:
 runs-on: linux-latest
 steps:
   -name: Compila el programa
-   uses: actions/make
+   uses: gcc main.c -o conversor.c
 
   -name: Fa el checkout
    uses: actions/checkout@v6
@@ -18,7 +18,7 @@ steps:
 runs-on: macos-latest
 steps:
   -name: Compila el programa
-   uses: actions/make
+   uses: gcc main.c -o conversor.c
 
   -name: Fa el checkout
    uses: actions/checkout@v6
